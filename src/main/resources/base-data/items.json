@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Car",
+		"description": "Luxury car",
+		"imageUrl": "images/items/car.jpg",
+		"quantity": 1000,
+		"price": 1000000.50
+	},
+	{
+		"name": "Bike",
+		"description": "Racing bike",
+		"imageUrl": "images/items/bike.jpg",
+		"quantity": 2000,
+		"price": 200000.50
+	}
+]
