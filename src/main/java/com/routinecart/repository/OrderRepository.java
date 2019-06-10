@@ -1,4 +1,4 @@
-package com.routinecart;
+package com.routinecart.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
