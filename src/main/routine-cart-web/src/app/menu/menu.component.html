@@ -1,0 +1,4 @@
+<div class = "row">
+  <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+  <button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)"></button>
+</div>

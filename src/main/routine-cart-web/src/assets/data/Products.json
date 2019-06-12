@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Cannon Zoom ds-8",
+        "price": 47499,
+        "pictureUrl": "camera.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Beats Wireless",
+        "price": 2699,
+        "pictureUrl": "headphone.jpg"
+    },
+	{
+        "id": 3,
+        "name": "Iphone 8 Plus",
+        "price": 39799,
+        "pictureUrl": "mobile.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tommy Hilfiger Analog Watch",
+        "price": 7099,
+        "pictureUrl": "watch.jpg"
+    },
+	{
+        "id": 5,
+        "name": "Blender",
+        "price": 6578,
+        "pictureUrl": "Blender.jpg"
+    },
+	{
+        "id": 6,
+        "name": "Shoe",
+        "price": 1970,
+        "pictureUrl": "Shoe.jpg"
+    },
+	{
+        "id": 7,
+        "name": "Smart TV",
+        "price": 48685,
+        "pictureUrl": "SmartTV.jpg"
+    }
+]
