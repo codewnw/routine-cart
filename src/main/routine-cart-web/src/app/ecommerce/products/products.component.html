@@ -12,14 +12,10 @@
                         <input type="number" min="0" class="form-control" [(ngModel)]=order.quantity>
                     </div>
                     <div class="col-4 padding-0" *ngIf="!isProductSelected(order.product)">
-                        <button class="btn btn-primary" (click)="addToCart(order)"
-                                [disabled]='["order.quantity = 0"]'>AddToCart
-                        </button>
+                        <button class="btn btn-primary" (click)="addToCart(order)">AddToCart</button>
                     </div>
                     <div class="col-12" *ngIf="isProductSelected(order.product)">
-                        <button class="btn btn-primary btn-block"
-                                (click)="removeFromCart(order)">RemoveFromCart
-                        </button>
+                        <button class="btn btn-primary btn-block"(click)="removeFromCart(order)">RemoveFromCart</button>
                     </div>
                 </div>
             </div>

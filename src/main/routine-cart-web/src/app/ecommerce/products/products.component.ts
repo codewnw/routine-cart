@@ -27,6 +27,11 @@ export class ProductsComponent implements OnInit {
   }
 
   addToCart(order: ProductOrder) {
+     if(order.quantity==0)
+      {
+        alert("Select Quantity!");
+        return;
+      }
     this.ecommerceService.SelectedProductOrder = order;
     this.selectedProductOrder = this.ecommerceService.SelectedProductOrder;
     this.productSelected = true;
@@ -41,6 +46,7 @@ removeFromCart(productOrder: ProductOrder) {
     this.ecommerceService.ProductOrders = this.shoppingCartOrders;
     this.shoppingCartOrders = this.ecommerceService.ProductOrders;
     this.productSelected = false;
+    productOrder.quantity = 0;
 }
 
 getProductIndex(product: Product): number {
