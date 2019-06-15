@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { ProductOrders } from '../models/product-orders.model';
 import { ProductOrder } from '../models/product-order.model';
 import { Subject } from 'rxjs';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class EcommerceService {
-    private productsUrl = "Products.json";
+    private productsUrl = "http://localhost:8080/api/items";
     private ordersUrl = "Order.json";
 
     private productOrder: ProductOrder;
@@ -21,10 +21,10 @@ export class EcommerceService {
     ProductOrderChanged = this.productOrderSubject.asObservable();
     OrdersChanged = this.ordersSubject.asObservable();
     TotalChanged = this.totalSubject.asObservable();
- 
+
     constructor(private http: HttpClient) {
     }
- 
+
     getAllProducts() {
         return this.http.get(this.productsUrl);
     }

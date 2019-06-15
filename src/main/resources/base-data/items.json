@@ -12,5 +12,40 @@
 		"imageUrl": "images/items/bike.jpg",
 		"quantity": 2000,
 		"price": 200000.50
+	},
+	{
+		"name": "Cannon Zoom ds-8",
+		"price": 47499,
+		"imageUrl": "camera.jpg"
+	},
+	{
+		"name": "Beats Wireless",
+		"price": 2699,
+		"imageUrl": "headphone.jpg"
+	},
+	{
+		"name": "Iphone 8 Plus",
+		"price": 39799,
+		"imageUrl": "mobile.jpg"
+	},
+	{
+		"name": "Tommy Hilfiger Analog Watch",
+		"price": 7099,
+		"imageUrl": "watch.jpg"
+	},
+	{
+		"name": "Blender",
+		"price": 6578,
+		"imageUrl": "Blender.jpg"
+	},
+	{
+		"name": "Shoe",
+		"price": 1970,
+		"imageUrl": "Shoe.jpg"
+	},
+	{
+		"name": "Smart TV",
+		"price": 48685,
+		"imageUrl": "SmartTV.jpg"
 	}
 ]

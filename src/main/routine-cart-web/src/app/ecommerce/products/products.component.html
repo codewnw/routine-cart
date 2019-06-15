@@ -5,7 +5,7 @@
                 <h4>{{order.product.name}}</h4>
             </div>
             <div class="card-body">
-                <a href="#"><img class="card-img-top" src={{order.product.pictureUrl}} alt=""></a>
+                <a href="#"><img class="card-img-top" src={{order.product.imageUrl}} alt=""></a>
                 <h5 class="card-title">Rs {{order.product.price}}</h5>
                 <div class="row">
                     <div class="col-4 padding-0" *ngIf="!isProductSelected(order.product)">
@@ -15,7 +15,7 @@
                         <button class="btn btn-primary" (click)="addToCart(order)">AddToCart</button>
                     </div>
                     <div class="col-12" *ngIf="isProductSelected(order.product)">
-                        <button class="btn btn-primary btn-block"(click)="removeFromCart(order)">RemoveFromCart</button>
+                        <button class="btn btn-primary btn-block" (click)="removeFromCart(order)">RemoveFromCart</button>
                     </div>
                 </div>
             </div>
