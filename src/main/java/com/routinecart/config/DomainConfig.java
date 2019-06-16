@@ -12,6 +12,9 @@ import com.routinecart.service.ItemService;
 import com.routinecart.service.ItemServiceImpl;
 import com.routinecart.service.OrderService;
 import com.routinecart.service.OrderServiceImpl;
+import com.routinecart.repository.CategoryRepository;
+import com.routinecart.service.CategoryService;
+import com.routinecart.service.CategoryServiceImpl;
 
 @Configuration
 public class DomainConfig {
@@ -25,10 +28,13 @@ public class DomainConfig {
 	public OrderService orderService(OrderRepository orderRepository) {
 		return new OrderServiceImpl(orderRepository);
 	}
-
 	@Bean
-	public BaseDataService baseDataService(ItemService itemService, ObjectMapper objectMapper) {
-		return new BaseDataService(itemService, objectMapper);
+	public CategoryService categoryService(CategoryRepository categoryRepository) {
+		return new CategoryServiceImpl(categoryRepository);
+	}
+	@Bean
+	public BaseDataService baseDataService(ItemService itemService, ObjectMapper objectMapper, CategoryService categoryService) {
+		return new BaseDataService(itemService, objectMapper, categoryService);
 	}
 
 	@Bean
