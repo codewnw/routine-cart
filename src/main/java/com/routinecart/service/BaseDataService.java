@@ -12,7 +12,6 @@ import org.springframework.util.ResourceUtils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.routinecart.model.Item;
-import com.routinecart.model.Product;
 import com.routinecart.model.Category;
 
 public class BaseDataService {
@@ -30,7 +29,7 @@ public class BaseDataService {
 
 	public void createBaseData() {
 		createItemBaseData();
-		createProductCategoryData();
+		createCategoriesJsonData();
 	}
 
 	private void createItemBaseData() {
@@ -47,15 +46,15 @@ public class BaseDataService {
 		}
 		itemService.saveAll(items);
 	}
-	private void createProductCategoryData() {
+	private void createCategoriesJsonData() {
 		File file;
 		List<Category> categorys;
 		
 		try {
-			file = ResourceUtils.getFile("classpath:base-data/productCategory.json");
-			String itemsJson = new String(Files.readAllBytes(file.toPath()));
-			System.out.println("hhffffh"+itemsJson);
-			categorys = objectMapper.readValue(itemsJson, new TypeReference<List<Category>>() {
+			file = ResourceUtils.getFile("classpath:base-data/categories.json");
+			String categoriesJson = new String(Files.readAllBytes(file.toPath()));
+			System.out.println("categoriesJson"+categoriesJson);
+			categorys = objectMapper.readValue(categoriesJson, new TypeReference<List<Category>>() {
 			});
 		
 
