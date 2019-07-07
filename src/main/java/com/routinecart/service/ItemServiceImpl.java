@@ -2,8 +2,13 @@ package com.routinecart.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.routinecart.model.Item;
 import com.routinecart.repository.ItemRepository;
+@Service
+@Transactional
 
 public class ItemServiceImpl implements ItemService {
 
@@ -42,4 +47,6 @@ public class ItemServiceImpl implements ItemService {
 	public void saveAll(List<Item> items) {
 		itemRepository.saveAll(items);
 	}
+	
+	
 }

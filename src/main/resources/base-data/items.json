@@ -1,51 +1,56 @@
 [
 	{
-		"name": "Car",
-		"description": "Luxury car",
-		"imageUrl": "images/items/car.jpg",
-		"quantity": 1000,
-		"price": 1000000.50
+	"name": "Car",
+	"description": "Luxury car",
+	"imageUrl": "images/items/car.jpg",
+	"quantity": 1000,
+	"price": 1000000.50,
+	 "category": "AutoMobile",
+	"subCategory": "AutoMobile1"
 	},
 	{
 		"name": "Bike",
 		"description": "Racing bike",
 		"imageUrl": "images/items/bike.jpg",
 		"quantity": 2000,
-		"price": 200000.50
+		"price": 200000.50,
+	 	"category": "AutoMobile",
+	   "subCategory": "AutoMobile2"
 	},
 	{
 		"name": "Cannon Zoom ds-8",
 		"price": 47499,
-		"imageUrl": "camera.jpg"
+		"imageUrl": "camera.jpg",
+		"category": "Electronics",
+	   "subCategory": "Electronics1"
 	},
 	{
 		"name": "Beats Wireless",
 		"price": 2699,
-		"imageUrl": "headphone.jpg"
+	 	"imageUrl": "headphone.jpg",
+	  "category": "Electronics",
+	   "subCategory": "Electronics2"
 	},
 	{
 		"name": "Iphone 8 Plus",
 		"price": 39799,
-		"imageUrl": "mobile.jpg"
+		"imageUrl": "mobile.jpg",
+		"category": "Electronics",
+	   "subCategory": "Electronics3"
 	},
 	{
 		"name": "Tommy Hilfiger Analog Watch",
 		"price": 7099,
-		"imageUrl": "watch.jpg"
+		"imageUrl": "watch.jpg",
+		"category": "Electronics",
+	   "subCategory": "Electronics4"
 	},
 	{
 		"name": "Blender",
 		"price": 6578,
-		"imageUrl": "Blender.jpg"
-	},
-	{
-		"name": "Shoe",
-		"price": 1970,
-		"imageUrl": "Shoe.jpg"
-	},
-	{
-		"name": "Smart TV",
-		"price": 48685,
-		"imageUrl": "SmartTV.jpg"
-	}
+		"imageUrl": "Blender.jpg",
+		"category": "Electronics",
+	   "subCategory": "Electronics5"
+	}	
+	
 ]

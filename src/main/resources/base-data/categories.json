@@ -1,0 +1,30 @@
+ [{
+      "id": 1,
+      "category": "AutoMobile",
+      "subCategories": [{
+          "subCategory": "AutoMobile1"
+
+        },
+        {
+           "subCategory": "AutoMobile2"
+          
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Electronics",
+      "subCategories": [{
+          "subCategory": "Electronics1"
+          
+        },
+        {
+           "subCategory": "Electronics2"
+          
+        }, {
+          "subCategory": "Electronics3"
+          
+        }
+      ]
+    }
+  ]

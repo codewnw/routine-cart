@@ -3,6 +3,8 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 
 @Entity
@@ -13,46 +15,64 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "categories_id")
     private Long id;
-    @Column(name = "name")
-    private String name;
+    @Column(name = "category")
+    private String category;
  
-   // @JoinColumn(name = "COURSE_ID")
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<Product> products;
- 
-	public Category(Long id, String name, List<Product> products) {
+
+	
+    
+	//@OneToMany(mappedBy = "categories")
+    @OneToMany(cascade = CascadeType.ALL)
+	private List<SubCategory> subCategories;
+
+	
+	public Category() {
 		super();
-		this.id = id;
-		this.name = name;
-		this.products = products;
 	}
+
 
 	public Long getId() {
 		return id;
 	}
 
+
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+
+	public String getCategory() {
+		return category;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
-	public List<Product> getProducts() {
-		return products;
+
+	public List<SubCategory> getSubCategories() {
+		return subCategories;
 	}
 
-	public void setProducts(List<Product> products) {
-		this.products = products;
+
+	public void setSubCategories(List<SubCategory> subCategories) {
+		this.subCategories = subCategories;
 	}
 
-	public Category() {
-    }
+
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", category=" + category + ", subCategories=" + subCategories + "]";
+	}
+
+
+	public Category(Long id, String category, List<SubCategory> subCategories) {
+		super();
+		this.id = id;
+		this.category = category;
+		this.subCategories = subCategories;
+	}
 
 
 
